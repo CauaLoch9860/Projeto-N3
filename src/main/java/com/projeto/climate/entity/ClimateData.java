@@ -10,16 +10,16 @@ public class ClimateData {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private LocalDate date;
+    private LocalDate date; // ou Date, dependendo do seu uso
+
     private Double temperature;
     private Double humidity;
     private String weatherDescription;
 
     @ManyToOne
-    @JoinColumn(name = "city_id")
     private City city;
 
-    // Getters e Setters
+    // Getters e setters
     public Long getId() {
         return id;
     }
@@ -28,11 +28,11 @@ public class ClimateData {
         this.id = id;
     }
 
-    public LocalDate getDate() {
+    public LocalDate getDate() { // ou Date
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(LocalDate date) { // ou Date
         this.date = date;
     }
 

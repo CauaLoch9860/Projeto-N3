@@ -1,2 +1,2 @@
-Cauã Loch Fernandes
+Cauã Loch Fernandes e
 Vinícius Teixeira Colombo

@@ -1,12 +1,13 @@
 package com.projeto.climate.entity;
 
 import jakarta.persistence.*;
-import jakarta.persistence.Id;
 
 @Entity
+@Table(name = "users")
 public class User {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String username;
